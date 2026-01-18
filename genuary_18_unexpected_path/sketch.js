@@ -26,7 +26,7 @@ function draw() {
   
   // Map digit to movement direction
   // 0-1: up, 2-3: right, 4-5: down, 6-7: left, 8-9: random diagonal
-  let step = random(5);
+  let step = random(-5,5);
   if (digit <= 1) {
     walker.y -= step;
   } else if (digit <= 3) {
